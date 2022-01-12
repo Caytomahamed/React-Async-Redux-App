@@ -11,7 +11,6 @@ export const countriesReducer = (state = InitialState , action) => {
 
     switch (action.type) {
       case allImport.START:
-        console.log(action.payload);
         return {
           ...state,
           isLoading: true,

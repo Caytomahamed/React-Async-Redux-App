@@ -12,7 +12,6 @@ export const fetchData = () => (dispatch) => {
   
       axios.get("https://restcountries.com/v3.1/all").
       then((res) => {
-          console.log("data-", res.data);
           // Dispatch Succes
           dispatch({ type: SUCCESS, payload: res.data });
         })
